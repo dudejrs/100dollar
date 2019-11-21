@@ -5,8 +5,7 @@ const dropdown_btn = document.querySelector(".dropdown-btn");
 const dropdown_btn2 = document.querySelectorAll(".dropdown-btn")[1];
 const dropdown_list = document.querySelectorAll(".dropdown-list")
 const dropdown_content = document.querySelector(".dropdown-content");
-const trig_under = document.querySelector("#trig_under");
-const trig_post = document.querySelector("#trig_post");
+
 
 const  handleScroll = function(event){
 
@@ -53,19 +52,7 @@ const toggle_dropdowncontent = function(event){
 	this.classList.toggle("a11y-hidden");
 }
 ;
-const triger_postgraduate = function(e){
-		console.log("selected")
-		document.querySelector(".content.selected").classList.remove("selected");
-		// document.querySelector(".sectionContent").style["background-color"]="#727";
-		setTimeout(()=>{
-			document.querySelector("#Postgraduate").classList.add("selected")},500);
-};
-const triger_undergraduate = function(e){
-		document.querySelector(".content.selected").classList.remove("selected");
-		// document.querySelector(".sectionContent").style["background-color"]="#727";
-		setTimeout(()=>{
-			document.querySelector("#Undergraduate").classList.add("selected")},500);
-};
+
 
 
 const change_btn_content = function(event){
@@ -96,14 +83,8 @@ dropdown_list.forEach((element) =>{
 
 dropdown_content.addEventListener('mouseleave',handle_mouseOut.bind(dropdown_content));
 
-trig_under.addEventListener('click',triger_undergraduate);
-trig_post.addEventListener('click',triger_postgraduate);
 
 setTimeout(()=>{
 	navbar.classList.add("hidden");
 },1000);
 
-
-
-
-console.log("hello");	

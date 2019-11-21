@@ -10,4 +10,7 @@ router.get('/courses',function(req, res, next){
 	res.render('courses', { title : 'courses'});
 });
 
+router.get('/course',function(req, res, next){
+	res.render('course')});
+
 module.exports = router;
