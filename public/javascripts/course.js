@@ -22,6 +22,140 @@ const Course =  {
 		subject : ["Introduction","About Me(HTML)", "CSS", "CSS Design & Layout", "Movie Review(HTML, CSS, Layout)", "Basic PHP", "Forms", "SQL", "JavaScript"],
 		lab_slide : ["https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab0-introduction.html","https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab1-aboutme(HTML).html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab3-favorite.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab4-movieReview.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab5-musicLibrary.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab6-gradeStore.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab7-SQL.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab8-pimpMyText.html"]
 	}
+
+	// pbl : {
+	// 	pbl_project: "Develop a Web Application",
+
+	// 	pbl_slide : 'https://selab.hanyang.ac.kr/courses/cse326/2019/project/project.html',
+
+	// 	pbl_group : {
+	// 		section1 : [
+	// 		{
+	// 			team_name : "team1",
+	// 			leader : "박서연",
+	// 			team_member : ["이효원", "정희재", "김재현", "모지환", "황예찬"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team2",
+	// 			leader : "이종민",
+	// 			team_member : ["박준영", "박짆격", "송현수", "엄세진", "이준섭"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team3",
+	// 			leader : "김소현",
+	// 			team_member : ["임소윤", "이정인", "강가원", "안예진"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team4",
+	// 			leader : "이민혁",
+	// 			team_member : ["백승민", "김유현", "Ana Carolina Cardoso", "Zhou Xueyi", "Federik Bonde"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team5",
+	// 			leader : "양재우",
+	// 			team_member : ["주한새", "강은호", "권순범", "김하영", "안한서"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team6",
+	// 			leader : "위준범",
+	// 			team_member : ["배진우", "박재선", "박성수", "최준호"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team7",
+	// 			leader : "박재용",
+	// 			team_member : ["김동규", "이세명", "오승기", "김덕영"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team8",
+	// 			leader : "고동현",
+	// 			team_member : ["김동현", "김두호", "왕종휘", "김예진", "문수림"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team9",
+	// 			leader : "성태훈",
+	// 			team_member : ["박예찬", "이무경", "장윤호", "심유빈"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team10",
+	// 			leader : "윤규민",
+	// 			team_member : ["박제현", "임정현", "윤지인", "이수종"],
+	// 			team_page : "#"
+	// 		}
+	// 		],
+
+	// 		section2 : [
+	// 		{
+	// 			team_name : "team1",
+	// 			leader : "박서연",
+	// 			team_member : ["이효원", "정희재", "김재현", "모지환", "황예찬"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team2",
+	// 			leader : "이종민",
+	// 			team_member : ["박준영", "박짆격", "송현수", "엄세진", "이준섭"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team3",
+	// 			leader : "김소현",
+	// 			team_member : ["임소윤", "이정인", "강가원", "안예진"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team4",
+	// 			leader : "이민혁",
+	// 			team_member : ["백승민", "김유현", "Ana Carolina Cardoso", "Zhou Xueyi", "Federik Bonde"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team5",
+	// 			leader : "양재우",
+	// 			team_member : ["주한새", "강은호", "권순범", "김하영", "안한서"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team6",
+	// 			leader : "위준범",
+	// 			team_member : ["배진우", "박재선", "박성수", "최준호"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team7",
+	// 			leader : "박재용",
+	// 			team_member : ["김동규", "이세명", "오승기", "김덕영"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team8",
+	// 			leader : "고동현",
+	// 			team_member : ["김동현", "김두호", "왕종휘", "김예진", "문수림"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team9",
+	// 			leader : "성태훈",
+	// 			team_member : ["박예찬", "이무경", "장윤호", "심유빈"],
+	// 			team_page : "#"
+	// 		},
+	// 		{
+	// 			team_name : "team10",
+	// 			leader : "윤규민",
+	// 			team_member : ["박제현", "임정현", "윤지인", "이수종"],
+	// 			team_page : "#"
+	// 		}
+	// 		]
+	// 	}
+	// }	
 };
 
 const make_Timeline = function(){
@@ -154,20 +288,57 @@ const focusOut = function(){
 
 }
 
-const changeContent = function(event){
-	const target = this.innerHTML;
-	console.log(this);
-	document.querySelector(".frame.selected").classList.remove("selected");
-	document.querySelector(".frame#"+target).classList.add("selected");
-}
+// const changeContent = function(event){
+// 	const target = '.frame#'+ this.innerHTML;
+// 	document.querySelector(".frame.selected").classList.remove("selected");
+// 	document.querySelector(target).classList.add("selected");
+// };
+
+// const make_PBLGroup = function(){
+// 	const pbl_group_container = document.querySelector("#pbl_group");
+
+// 	const section1_container  = document.createElement("div");
+// 	for(i=0; i<Course.pbl.pbl_group.section1.length;i++){
+// 		const group_container = document.createElement("div");
+// 		const group_name = document.createElement("h4");
+// 		const group_list = document.createElement("ul");
+// 		const group_leader = document.createElement("li");
+// 		const group_page = document.createElement("h5");
+
+// 		const group_name_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_name);
+// 		const group_leader_text = document.createTextNode(Course.pbl.pbl_group.section1[i].leader);
+// 		const group_page_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_page);
+		
+// 			group_name.appendChild(group_name_text);
+// 			group_leader.appendChild(group_leader_text);
+// 			group_list.appendChild(group_leader); 
+// 			group_page.appendChild(group_page_text);
+// 		for(j=0;j<Course.pbl.pbl_group.section1[i].length;j++){
+// 			const group_teamone = document.createElement("li");
+// 			const group_teamone_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_member[j]);
+			
+// 			group_teamone.appendChild(group_teamone_text);
+// 			group_list.appendChild(group_teamone);
+// 		}
+// 			group_container.appendChild(group_name);
+// 			group_container.appendChild(group_list);
+// 			group_container.appendChild(group_page);
+
+// 			section1_container.appendChild(group_container);
+// 	}
+
+// 	pbl_group_container.appendChild(section1_container);
+// 	console.log("success");
+// }
 
 
 
 make_Timeline();
 focusOn();
+// make_PBLGroup();
 
 document.querySelector("#timeline_btn").addEventListener('click',focusOut);
 
-document.querySelectorAll(".dropdown-list").forEach((element)=>{
-	element.addEventListener('click',changeContent.bind(element));
-})
+// document.querySelectorAll(".dropdown-list").forEach((element)=>{
+// 	element.addEventListener('click',changeContent.bind(element));
+// })
