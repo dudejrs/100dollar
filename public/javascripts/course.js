@@ -1,4 +1,14 @@
+const changeContent = function(event){
+	const frame = document.querySelectorAll(".frame");
+	const target = '.frame#'+ this.innerHTML;
+	console.log(target);
+	document.querySelector(".frame.selected").classList.remove("selected");
+	frame.forEach(()=>{
 
+<<<<<<< HEAD
+	});
+	document.querySelector(target).classList.add("selected");
+=======
 
 const Timeline = document.querySelector("#Timeline");
 
@@ -22,323 +32,106 @@ const Course =  {
 		subject : ["Introduction","About Me(HTML)", "CSS", "CSS Design & Layout", "Movie Review(HTML, CSS, Layout)", "Basic PHP", "Forms", "SQL", "JavaScript"],
 		lab_slide : ["https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab0-introduction.html","https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab1-aboutme(HTML).html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab3-favorite.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab4-movieReview.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab5-musicLibrary.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab6-gradeStore.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab7-SQL.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab8-pimpMyText.html"]
 	}
-
-	// pbl : {
-	// 	pbl_project: "Develop a Web Application",
-
-	// 	pbl_slide : 'https://selab.hanyang.ac.kr/courses/cse326/2019/project/project.html',
-
-	// 	pbl_group : {
-	// 		section1 : [
-	// 		{
-	// 			team_name : "team1",
-	// 			leader : "박서연",
-	// 			team_member : ["이효원", "정희재", "김재현", "모지환", "황예찬"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team2",
-	// 			leader : "이종민",
-	// 			team_member : ["박준영", "박짆격", "송현수", "엄세진", "이준섭"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team3",
-	// 			leader : "김소현",
-	// 			team_member : ["임소윤", "이정인", "강가원", "안예진"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team4",
-	// 			leader : "이민혁",
-	// 			team_member : ["백승민", "김유현", "Ana Carolina Cardoso", "Zhou Xueyi", "Federik Bonde"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team5",
-	// 			leader : "양재우",
-	// 			team_member : ["주한새", "강은호", "권순범", "김하영", "안한서"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team6",
-	// 			leader : "위준범",
-	// 			team_member : ["배진우", "박재선", "박성수", "최준호"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team7",
-	// 			leader : "박재용",
-	// 			team_member : ["김동규", "이세명", "오승기", "김덕영"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team8",
-	// 			leader : "고동현",
-	// 			team_member : ["김동현", "김두호", "왕종휘", "김예진", "문수림"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team9",
-	// 			leader : "성태훈",
-	// 			team_member : ["박예찬", "이무경", "장윤호", "심유빈"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team10",
-	// 			leader : "윤규민",
-	// 			team_member : ["박제현", "임정현", "윤지인", "이수종"],
-	// 			team_page : "#"
-	// 		}
-	// 		],
-
-	// 		section2 : [
-	// 		{
-	// 			team_name : "team1",
-	// 			leader : "박서연",
-	// 			team_member : ["이효원", "정희재", "김재현", "모지환", "황예찬"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team2",
-	// 			leader : "이종민",
-	// 			team_member : ["박준영", "박짆격", "송현수", "엄세진", "이준섭"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team3",
-	// 			leader : "김소현",
-	// 			team_member : ["임소윤", "이정인", "강가원", "안예진"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team4",
-	// 			leader : "이민혁",
-	// 			team_member : ["백승민", "김유현", "Ana Carolina Cardoso", "Zhou Xueyi", "Federik Bonde"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team5",
-	// 			leader : "양재우",
-	// 			team_member : ["주한새", "강은호", "권순범", "김하영", "안한서"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team6",
-	// 			leader : "위준범",
-	// 			team_member : ["배진우", "박재선", "박성수", "최준호"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team7",
-	// 			leader : "박재용",
-	// 			team_member : ["김동규", "이세명", "오승기", "김덕영"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team8",
-	// 			leader : "고동현",
-	// 			team_member : ["김동현", "김두호", "왕종휘", "김예진", "문수림"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team9",
-	// 			leader : "성태훈",
-	// 			team_member : ["박예찬", "이무경", "장윤호", "심유빈"],
-	// 			team_page : "#"
-	// 		},
-	// 		{
-	// 			team_name : "team10",
-	// 			leader : "윤규민",
-	// 			team_member : ["박제현", "임정현", "윤지인", "이수종"],
-	// 			team_page : "#"
-	// 		}
-	// 		]
-	// 	}
-	// }	
+>>>>>>> parent of 0d5db85... error!
 };
 
-const make_Timeline = function(){
-	const Timeline = document.querySelector("#Timeline");
-	let cur_week = 0;
-	let lab_count = 0;
+const make_PBLObjective = function(){
+	const pbl_objective = document.querySelector("#pbl_objective");
+	const pbl_project = document.createElement("h2");
+	const pbl_description = document.createElement("ul");
 
-	for(i=0;i<Course.date.length;i++){
-		const newDiv = document.createElement("div");
-		const slot_content = document.createElement("div");
-		const slot_contentbox = document.createElement("div");
-		const date = document.createElement("h4");
-		const subject = document.createElement("h4");
-		const lec_note = document.createElement("a");
+	const pbl_project_text = document.createTextNode(Course.pbl.pbl_project);
+	for(i=0; i<Course.pbl.pbl_project_description.length ; i++){
+			const pbl_description_list = document.createElement("li");
+			const  pbl_description_list_text = document.createTextNode(Course.pbl.pbl_project_description[i]);
 
-		const date_text = document.createTextNode(Course.date[i]);
-		const subject_text = document.createTextNode(Course.subject[i]);
-		const lec_note_text = document.createTextNode("lecture note");
-
-		date.appendChild(date_text);
-		subject.appendChild(subject_text);
-		lec_note.appendChild(lec_note_text);
-		lec_note.href = Course.lecture_slide[i];
-
-		newDiv.classList.add("time_slot");
-		slot_content.classList.add("slot_content");
-		slot_content.classList.add("class");
-		slot_contentbox.classList.add("slot_contentbox");
-		date.classList.add("date");
-		subject.classList.add("subject");
-		lec_note.classList.add("lec_note");
-
-
-		if(Course.week[i] != cur_week){
-			const newWeek = document.createElement("div");
-			newWeek.classList.add("time_slot");
-			newWeek.classList.add("week_slot");
-			
-			const week_date = document.createElement("div");
-			week_date.appendChild(document.createTextNode(" "));
-
-			const week = document.createElement("h4");
-			const week_text = document.createTextNode("week"+Course.week[i]);
-			
-			const weekbox = document.createElement("div");
-			weekbox.classList.add("weekbox");
-			weekbox.classList.add("slot_content");
-
-			week.appendChild(week_text);
-			week.classList.add("week");
-
-			weekbox.appendChild(week);
-			newWeek.appendChild(week_date);
-			newWeek.appendChild(weekbox);
-			Timeline.appendChild(newWeek);
-			// slot_content.appendChild(week);
-			cur_week = Course.week[i];
-
-		}
-
-		newDiv.classList.add("week"+cur_week);
-
-		slot_contentbox.appendChild(subject);
-		slot_contentbox.appendChild(lec_note);
-		slot_content.appendChild(slot_contentbox);
-		newDiv.appendChild(date);
-		newDiv.appendChild(slot_content);
-		Timeline.appendChild(newDiv);
-
-		
-		if(cur_week != Course.week[i+1] && Course.lab.week.indexOf(cur_week) >=0){
-
-			const newLab = document.createElement("div");
-			const lab_date = document.createElement("div");
-			const lab_content = document.createElement("div");
-			const lab_contentbox = document.createElement("div");
-			const lab_subject = document.createElement("h4");
-			const lab_note = document.createElement("a");
-
-			const lab_subject_text = document.createTextNode(Course.lab.subject[lab_count]);
-			const lab_note_text = document.createTextNode("lab note");
-
-			lab_date.appendChild(document.createTextNode(" ")); 
-			lab_subject.appendChild(lab_subject_text);
-			lab_note.appendChild(lab_note_text);
-
-			lab_note.href=Course.lab.lab_slide[lab_count];
-
-			lab_content.classList.add("slot_content");
-			lab_contentbox.classList.add("slot_contentbox");
-			newLab.classList.add("time_slot");
-			newLab.classList.add("week"+cur_week);
-
-
-			lab_contentbox.appendChild(lab_subject);
-			lab_contentbox.appendChild(lab_note);
-			lab_content.appendChild(lab_contentbox)
-			newLab.appendChild(lab_date);
-			newLab.appendChild(lab_content);
-			Timeline.appendChild(newLab);
-			lab_count++;
-		}
-
+			pbl_description_list.appendChild(pbl_description_list_text);
+			pbl_description.appendChild(pbl_description_list);
 	}
-};
-
-const focusOn = function(){
-	const cur_week = 5;
-	const timeslot = document.querySelectorAll(".time_slot");
-	const curweek_slot = document.querySelectorAll(".week"+cur_week);
-
-	timeslot.forEach((element)=>{
-		element.classList.add("deselected");
-	});
-
-	curweek_slot.forEach((element)=>{
-		element.classList.remove("deselected");
-		element.classList.add("selected");
-	});
+	pbl_project.appendChild(pbl_project_text);
+	pbl_objective.appendChild(pbl_project);
+	pbl_objective.appendChild(pbl_description);
 }
 
-const focusOut = function(){
+const make_PBLGroup = function(){
+	const pbl_group_container = document.querySelector("#pbl_GGroup");
+	
+	const section1_button = document.createElement("button");
+	section1_button.appendChild(document.createTextNode("click"));
+	section1_button.id="sec1btn";
 
-	const timeslot = document.querySelectorAll(".deselected");
+	const section1_container  = document.createElement("div");
+	section1_container.id="sec1";
+	for(i=0; i<Course.pbl.pbl_group.section1.length;i++){
+		const group_container = document.createElement("div");
+		const group_name = document.createElement("h4");
+		const group_list = document.createElement("ul");
+		const group_leader = document.createElement("li");
+		const group_page = document.createElement("a");
 
-	timeslot.forEach((element)=>{
-		element.classList.remove("deselected");
-		element.classList.add("selected");
-	});
-
-}
-
-// const changeContent = function(event){
-// 	const target = '.frame#'+ this.innerHTML;
-// 	document.querySelector(".frame.selected").classList.remove("selected");
-// 	document.querySelector(target).classList.add("selected");
-// };
-
-// const make_PBLGroup = function(){
-// 	const pbl_group_container = document.querySelector("#pbl_group");
-
-// 	const section1_container  = document.createElement("div");
-// 	for(i=0; i<Course.pbl.pbl_group.section1.length;i++){
-// 		const group_container = document.createElement("div");
-// 		const group_name = document.createElement("h4");
-// 		const group_list = document.createElement("ul");
-// 		const group_leader = document.createElement("li");
-// 		const group_page = document.createElement("h5");
-
-// 		const group_name_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_name);
-// 		const group_leader_text = document.createTextNode(Course.pbl.pbl_group.section1[i].leader);
-// 		const group_page_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_page);
-		
-// 			group_name.appendChild(group_name_text);
-// 			group_leader.appendChild(group_leader_text);
-// 			group_list.appendChild(group_leader); 
-// 			group_page.appendChild(group_page_text);
-// 		for(j=0;j<Course.pbl.pbl_group.section1[i].length;j++){
-// 			const group_teamone = document.createElement("li");
-// 			const group_teamone_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_member[j]);
+		const group_name_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_name);
+		const group_leader_text = document.createTextNode(Course.pbl.pbl_group.section1[i].leader);
+		const group_page_text = document.createTextNode("홈페이지");
 			
-// 			group_teamone.appendChild(group_teamone_text);
-// 			group_list.appendChild(group_teamone);
-// 		}
-// 			group_container.appendChild(group_name);
-// 			group_container.appendChild(group_list);
-// 			group_container.appendChild(group_page);
+		group_page.href=Course.pbl.pbl_group.section1[i].team_page;
 
-// 			section1_container.appendChild(group_container);
-// 	}
+		group_container.classList.add("pbl_group_container");
+		group_list.classList.add("pbl_group_list")
+		
+			group_name.appendChild(group_name_text);
+			group_leader.appendChild(group_leader_text);
+			group_list.appendChild(group_leader); 
+			group_page.appendChild(group_page_text);
+			for(j=0;j<Course.pbl.pbl_group.section1[i].team_member.length;j++){
+				let group_teamone = document.createElement("li");
+				let group_teamone_text = document.createTextNode(Course.pbl.pbl_group.section1[i].team_member[j]);
+				
+				group_teamone.appendChild(group_teamone_text);
+				group_list.appendChild(group_teamone);
+			}
+			group_container.appendChild(group_name);
+			group_container.appendChild(group_list);
+			group_container.appendChild(group_page);
 
-// 	pbl_group_container.appendChild(section1_container);
-// 	console.log("success");
-// }
+			section1_container.appendChild(group_container);
+	}
+	pbl_group_container.appendChild(section1_button);
+	pbl_group_container.appendChild(section1_container);
+}
+
+const fold_pbl_group = function(){
+	const pbl_group = document.querySelector("#sec1");
+	pbl_group.classList.toggle("fold");
+}
+
+<<<<<<< HEAD
+
+make_Timeline();
+focusOn();
+make_PBLObjective();
+make_PBLGroup();
+=======
+const changeContent = function(event){
+	const target = this.innerHTML;
+	console.log(this);
+	document.querySelector(".frame.selected").classList.remove("selected");
+	document.querySelector(".frame#"+target).classList.add("selected");
+}
 
 
 
 make_Timeline();
 focusOn();
-// make_PBLGroup();
+>>>>>>> parent of 0d5db85... error!
 
-document.querySelector("#timeline_btn").addEventListener('click',focusOut);
+document.querySelectorAll(".dropdown-list").forEach((element)=>{
+	element.addEventListener('click',changeContent.bind(element));
+})
 
-// document.querySelectorAll(".dropdown-list").forEach((element)=>{
-// 	element.addEventListener('click',changeContent.bind(element));
-// })
+<<<<<<< HEAD
+document.querySelector("#sec1btn").addEventListener('click', fold_pbl_group);
+=======
+document.querySelectorAll(".dropdown-list").forEach((element)=>{
+	element.addEventListener('click',changeContent.bind(element));
+})
+>>>>>>> parent of 0d5db85... error!

@@ -2,15 +2,17 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
+	
+	min-height: 0;
+	height: 0;
 	margin: 0 auto;
-	min-height: 80vh;
-	width: 80vw;
 	background-color: #efefef;
 	opacity: 0;
 }
 
 .frame.selected {
+	min-height: 80vh;
+	width: 80vw;
 	opacity: 1;
 }
 
@@ -133,10 +135,86 @@
 	box-sizing: border-box;
 	/*padding: 0 5vw;*/
 	/*background-color: red;*/
+<<<<<<< HEAD
 }
 
+#Inform {
+	display: flex;
+	flex-direction: column;
+}
 
-
+#Lecturer_Assitants {
+	display: flex;
+	flex-direction: column;
+}
+#Lecturer_Assitants > div{
+	display: flex;
+	flex-direction: row;
+}
+#class_section > ul{
+	display: flex;
+	flex-direction: row;
+}
 #content2 {
-	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+#pbl_objective {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#pbl_GGroup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#pbl_GGroup > div  {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#sec1btn{
+	min-width: 
+}
+
+#sec1 {
+	min-height:60vh;
+	opacity: 1;	
+}
+
+#sec1.fold{
+	height: 0;
+	min-height: 0;
+	opacity: 0;
+}
+
+.pbl_group_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 15vw;
+	margin: 2.5vh 2.5vh;
+	border : 1px solid blue;
+	border-radius: 1.5vw;
+}
+
+.pbl_group_list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap : wrap;
+	list-style: none;		
+}
+.pbl_group_list > li {
+	margin: 0 0.5vw;
+}
+=======
+}
+>>>>>>> parent of 0d5db85... error!

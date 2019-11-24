@@ -15,7 +15,7 @@ const  handleScroll = function(event){
 			this.classList.remove("fixed")
 			this.classList.add("sticky");
 		}
-		else{	
+		else if(scrollTop <= 0.5*screen_height){	
 			this.classList.remove("sticky");
 			this.classList.add("fixed");
 		}
@@ -28,7 +28,7 @@ const  handleScroll_nav = function(event){
 			this.classList.remove("hidden")
 			this.classList.add("hidden");
 		}
-		else{
+		else if(scrollTop <= 0.5*screen_height){
 			this.classList.remove("hidden");
 			setTimeout(()=>{
 				this.classList.add("hidden");
@@ -41,7 +41,7 @@ const handleMouseMove = function(event){
 	if( event.pageY < 0.05*screen_height){
 		this.classList.remove("hidden");
 	}
-	else {
+	else if(event.pageY > 0.3*screen_height){
 		setTimeout(()=>{
 			this.classList.add("hidden");
 		})
