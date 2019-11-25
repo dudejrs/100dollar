@@ -4,35 +4,8 @@ const changeContent = function(event){
 	console.log(target);
 	document.querySelector(".frame.selected").classList.remove("selected");
 	frame.forEach(()=>{
-
-<<<<<<< HEAD
 	});
 	document.querySelector(target).classList.add("selected");
-=======
-
-const Timeline = document.querySelector("#Timeline");
-
-
-const Course =  {
-	pbl : true,
-
-	date  : [ "09/05","09/06","09/12","09/13","09/19","09/20","09/26","09/27","10/02","10/03","10/09","10/10","10/16","10/17","10/23","10/24","10/30","10/31","11/07","11/08","11/14","11/15","11/21","11/22","11/28","11/29","12/05","12/06","12/12","12/13","12/19","12/20"
-	],
-
-	week : [ 1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16],
-
-	subject : [ "Introduction & The Internet and World Wide Web", "Basic HTML", "CSS for Styling", "Page Layout", "Basic PHP", "Forms", "Relational Database & SQL", "JavaScript", "DOM", "Prototype & Event", "Ajax & XML & JSON", "Scriptaculous"
-	],
-
-	lecture_slide :[
-	"https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/00-introduction.html","https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/01-www.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/02-html.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/03-css.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/04-layout.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/05-PHP.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/06-forms.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/07-sql.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/08-javascript.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/09-dom.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/10-prototype.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/11-events.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/12-ajaxXmlJson.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/13-webServices.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/lecture/14-scriptaculous.html" ],
-
-	lab : {
-		week : [3,4,5,6,7,9,10,11,12],
-		subject : ["Introduction","About Me(HTML)", "CSS", "CSS Design & Layout", "Movie Review(HTML, CSS, Layout)", "Basic PHP", "Forms", "SQL", "JavaScript"],
-		lab_slide : ["https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab0-introduction.html","https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab1-aboutme(HTML).html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab3-favorite.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab4-movieReview.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab5-musicLibrary.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab6-gradeStore.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab7-SQL.html", "https://selab.hanyang.ac.kr/courses/cse326/2019/labs/lab8-pimpMyText.html"]
-	}
->>>>>>> parent of 0d5db85... error!
 };
 
 const make_PBLObjective = function(){
@@ -104,34 +77,13 @@ const fold_pbl_group = function(){
 	pbl_group.classList.toggle("fold");
 }
 
-<<<<<<< HEAD
-
 make_Timeline();
 focusOn();
 make_PBLObjective();
 make_PBLGroup();
-=======
-const changeContent = function(event){
-	const target = this.innerHTML;
-	console.log(this);
-	document.querySelector(".frame.selected").classList.remove("selected");
-	document.querySelector(".frame#"+target).classList.add("selected");
-}
-
-
-
-make_Timeline();
-focusOn();
->>>>>>> parent of 0d5db85... error!
 
 document.querySelectorAll(".dropdown-list").forEach((element)=>{
 	element.addEventListener('click',changeContent.bind(element));
 })
 
-<<<<<<< HEAD
 document.querySelector("#sec1btn").addEventListener('click', fold_pbl_group);
-=======
-document.querySelectorAll(".dropdown-list").forEach((element)=>{
-	element.addEventListener('click',changeContent.bind(element));
-})
->>>>>>> parent of 0d5db85... error!
