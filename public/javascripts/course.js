@@ -2,10 +2,10 @@ const changeContent = function(event){
 	const frame = document.querySelectorAll(".frame");
 	const target = '.frame#'+ this.innerHTML;
 	console.log(target);
+	document.querySelector(".frame.selected").classList.add("deselected");
 	document.querySelector(".frame.selected").classList.remove("selected");
-	frame.forEach(()=>{
-	});
 	document.querySelector(target).classList.add("selected");
+	document.querySelector(target).classList.remove("deselected");
 };
 
 const make_PBLObjective = function(){

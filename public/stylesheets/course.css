@@ -3,17 +3,27 @@
 	flex-direction: row;
 	justify-content: space-between;
 	
-	min-height: 0;
-	height: 0;
-	margin: 0 auto;
+	margin: 0 auto 10vh;
 	background-color: #efefef;
-	opacity: 0;
+	overflow-x: visible;
+	overflow-y: hidden;
 }
 
 .frame.selected {
 	min-height: 80vh;
 	width: 80vw;
 	opacity: 1;
+}
+
+.frame.deselected{
+	min-height: 0;
+	height: 1px;
+	width: 1px;
+	margin :0;
+	opacity: 0;
+	overflow : hidden;
+	clip : rect(1px,1px,1px,1px);
+	white-space: nowrap;
 }
 
 #content1 > div{
@@ -135,7 +145,6 @@
 	box-sizing: border-box;
 	/*padding: 0 5vw;*/
 	/*background-color: red;*/
-<<<<<<< HEAD
 }
 
 #Inform {
@@ -215,6 +224,4 @@
 .pbl_group_list > li {
 	margin: 0 0.5vw;
 }
-=======
-}
->>>>>>> parent of 0d5db85... error!
+

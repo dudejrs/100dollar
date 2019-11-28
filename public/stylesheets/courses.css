@@ -203,18 +203,15 @@ a.class-btn:hover::before{
 	width: 100vw;
 	color:black;
 	filter: drop-shadow(0,0,5vw,rgba(0,0,0,0.3));
+	overflow-y: hidden;
 	z-index: 1;
-}
-
-svg {
-	width: 100vw;
 }
 
 #section2_content{
 	display: flex;
-	padding: 20vh 0 0 10vw;
+	padding: 85vh 20vw 0 10vw;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	background-color: white;
 	height: 170vh;
 	clip-path: url(#section2_clip);
@@ -225,6 +222,8 @@ svg {
 	flex-direction: column;
 	justify-content: space-around;	
 	align-items: flex-start;
+	height: 90vh;
+	transform: translateY(-40%);
 }
 
 #aboutNav{
@@ -232,7 +231,9 @@ svg {
 	justify-content: space-around;
 	list-style: none;
 	margin-bottom: 50px;
-	width: 22vw;
+	min-width: 22vw;
+	padding: 0;
+	z-index: 3;
 }
 
 #aboutNav > li {
@@ -250,29 +251,39 @@ svg {
 	display: flex;
 	flex-direction: column;
 	width: 80vw;
-	min-height: 80vh;
+	height: 70vh;
+	z-index: 3;
+	overflow-x: scroll;
 }
 
 .content{
 	position: absolute;
-	margin : 0 10vw 0 0;
+	bottom:0;
+	margin : 0;
 	display : flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: space-around;
 	flex-wrap: wrap;
-	width: 80vw;
+	width: calc(170vh/1048*1219/10*8);
+	height: 0;
 	opacity : 0;
+	z-index: -1;
 }
 
 .content > .coursebox {
 	text-align: center;
-	width: 25vw;
+	width: 20vw;
 	min-width: 150px;
+	height: 30vh;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .content.selected{
+	height: 70vh;
 	opacity: 1;
+	z-index: 6;
 }
 
 

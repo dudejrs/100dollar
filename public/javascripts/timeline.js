@@ -275,7 +275,7 @@ const focusOn = function(){
 
 const focusOut = function(){
 
-	const timeslot = document.querySelectorAll(".deselected");
+	const timeslot = document.querySelectorAll(".time_slot.deselected");
 
 	timeslot.forEach((element)=>{
 		element.classList.remove("deselected");
