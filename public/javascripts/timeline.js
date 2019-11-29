@@ -260,8 +260,11 @@ const make_Timeline = function(){
 
 const focusOn = function(){
 	const cur_week = 5;
+	const timeline = document.querySelector("#Timeline")
 	const timeslot = document.querySelectorAll(".time_slot");
 	const curweek_slot = document.querySelectorAll(".week"+cur_week);
+
+	timeline.classList.add('focus');
 
 	timeslot.forEach((element)=>{
 		element.classList.add("deselected");
@@ -274,9 +277,11 @@ const focusOn = function(){
 }
 
 const focusOut = function(){
-
+	const timeline = document.querySelector("#Timeline");
 	const timeslot = document.querySelectorAll(".time_slot.deselected");
 
+
+	timeline.classList.remove('focus');
 	timeslot.forEach((element)=>{
 		element.classList.remove("deselected");
 		element.classList.add("selected");
@@ -285,4 +290,13 @@ const focusOut = function(){
 }
 
 
-document.querySelector("#timeline_btn").addEventListener('click',focusOut);
+document.querySelector("#timeline_btn").addEventListener('click',()=>{
+	const timeline =document.querySelector("#Timeline");
+
+	if(timeline.classList.contains('focus')){
+		focusOut();
+	}
+	else {
+		focusOn();
+	}
+});

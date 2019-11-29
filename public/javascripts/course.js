@@ -30,8 +30,6 @@ const make_PBLGroup = function(){
 	const pbl_group_container = document.querySelector("#pbl_GGroup");
 	
 	const section1_button = document.createElement("button");
-	section1_button.appendChild(document.createTextNode("click"));
-	section1_button.id="sec1btn";
 
 	const section1_container  = document.createElement("div");
 	section1_container.id="sec1";
@@ -68,12 +66,11 @@ const make_PBLGroup = function(){
 
 			section1_container.appendChild(group_container);
 	}
-	pbl_group_container.appendChild(section1_button);
 	pbl_group_container.appendChild(section1_container);
 }
 
 const fold_pbl_group = function(){
-	const pbl_group = document.querySelector("#sec1");
+	const pbl_group = document.querySelector("#pbl_GGroup");
 	pbl_group.classList.toggle("fold");
 }
 
@@ -86,4 +83,4 @@ document.querySelectorAll(".dropdown-list").forEach((element)=>{
 	element.addEventListener('click',changeContent.bind(element));
 })
 
-document.querySelector("#sec1btn").addEventListener('click', fold_pbl_group);
+document.querySelector("#pbl_groupBtn").addEventListener('click', fold_pbl_group);
