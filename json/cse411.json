@@ -132,19 +132,21 @@
 			}
 		],
 
-		"lecturer" : {
+		"Lecturer" : {
 			"name" : "Scott Lee",
 			"office" : "학연산클러스터 617호",
 			"tel" : "031-400-5238",
-			"email" : "scottlee@hanyang.ac.kr"
+			"email" : "scottlee@hanyang.ac.kr",
+			"img" :"https://t1.daumcdn.net/cfile/tistory/99ADE7495A3386642E"
 		},
 
-		"assistant" : [
+		"Assistant" : [
 		{
 			"name" : "HackJin Lee",
 			"office" : "학연산클러스터 621호",
 			"tel" : "031-400-4754",
-			"email" : "gsdjini91@gmail.com"
+			"email" : "gsdjini91@gmail.com",
+			"img" : "http://m.young.hyundai.com/upload/oldUnvs/data_down/Board/20120630205930962/_KVwKIMDpjDhqqtl2n740.jpg"
 		}
 		],
 		"section" : [
